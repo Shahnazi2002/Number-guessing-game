@@ -7,18 +7,21 @@ t = 0
 
 while repeat:
     t += 1
-    print("Try:", t)
+    print("\n")
+    print("-------------------------------------------------")
+    print("Trial #" + str(t))
     answer = int(input("Enter a number between 1 and 100: "))
     if answer == goal:
-        print("Yes!")
-        print("You reached the goal!", "(Try: " + str(t) + ")")
+        print("\n")
+        print("Yes!!")
+        print("You reached the goal!", "(# of trials : " + str(t) + ")")
         repeat = False
     elif answer < goal:
-        print("No!")
-        print("The goal is bigger!")
+        print("\n")
+        print("Unfortunately the goal is bigger ):")
         print("Try again!")
     elif answer > goal:
-        print("No!")
-        print("The goal is smaller!")
+        print("\n")
+        print("Unfortunately the goal is smaller ):")
         print("Try again!")
-print("End!")
+print("The End!")
